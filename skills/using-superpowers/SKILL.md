@@ -104,6 +104,12 @@ When multiple skills could apply, use this order:
 "Let's build X" → brainstorming first, then implementation skills.
 "Fix this bug" → debugging first, then domain-specific skills.
 
+## Safe Writing Routing
+
+For user-facing security submissions, disclosure reports, private gist prose, platform form text, or outbound emails, use `humanizer` after the technical content is complete.
+
+Safety rule: apply `humanizer` only to sendable prose. Do not humanize code, PoC files, commands, run logs, stack traces, addresses, hashes, signatures, file paths, exact impact labels, function names, code identifiers, quoted source text, or evidence snippets. If a humanized rewrite changes meaning, weakens precision, or moves beyond what the proof supports, restore the technical wording.
+
 ## Skill Types
 
 **Rigid** (TDD, debugging): Follow exactly. Don't adapt away discipline.
